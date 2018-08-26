@@ -20,6 +20,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
