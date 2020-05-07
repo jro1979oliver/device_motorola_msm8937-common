@@ -199,6 +199,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pedometer=false \
     ro.vendor.sensors.smd=false
 
+# Software navigation keys
+PRODUCT_PROPERTY_OVERRIDES += \
+    qemu.hw.mainkeys=0
+
 # Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.use_trim_settings=true \
