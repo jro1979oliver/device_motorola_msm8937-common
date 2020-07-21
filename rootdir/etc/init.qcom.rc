@@ -178,6 +178,10 @@ on post-fs-data
     # Create directory for apps access via QTEEConnector
     mkdir /data/vendor/qtee 0770 system system
 
+    # Graphics node permissions
+    chown system graphics /sys/devices/virtual/graphics/fb0/mdp/bw_mode_bitmap
+    chmod 0664 /sys/devices/virtual/graphics/fb0/mdp/bw_mode_bitmap
+
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
 
