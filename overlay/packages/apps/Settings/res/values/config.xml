@@ -24,4 +24,7 @@
   <!-- Battery Health -->
   <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full</string>
   <string name="config_batChargeCycle">/sys/class/power_supply/battery/cycle_count</string>
+
+   <!-- Device specific doze package -->
+   <string name="config_customDozePackage">org.lineageos.settings.device/org.lineageos.settings.device.DozePreferenceActivity</string>
 </resources>
