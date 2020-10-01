@@ -5,6 +5,7 @@
     >
     <original-package android:name="com.cyanogenmod.settings.device" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -40,7 +41,7 @@
         </activity>
         <activity
             android:name=".ActionsPreferenceActivity"
-            android:label="@string/moto_gestures_panel_title"
+            android:label="@string/actions_label"
             android:theme="@style/LineageActions">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -56,7 +57,7 @@
                 android:resource="@drawable/ic_settings_gestures" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/screen_gestures_panel_summary" />
+                android:resource="@string/summary_empty" />
         </activity>
     </application>
 </manifest>
