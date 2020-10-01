@@ -25,7 +25,6 @@ import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.util.Log;
 
-import org.lineageos.internal.util.FileUtils;
 import org.lineageos.settings.device.ServiceWrapper.LocalBinder;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -35,7 +34,13 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         Log.i(TAG, "Booting");
-        context.startService(new Intent(context, ServiceWrapper.class));
+
+        if (intent.getAction() == null)
+            return;
+
+        if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
+            context.startService(new Intent(context, ServiceWrapper.class));
+        }
     }
 
     private ServiceConnection serviceConnection = new ServiceConnection() {

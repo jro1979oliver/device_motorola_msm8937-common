@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2015 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (c) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,9 +39,9 @@ public class FlatUpSensor implements ScreenStateNotifier {
     private boolean mIsStowed;
     private boolean mLastFlatUp;
 
-    public FlatUpSensor(LineageActionsSettings LineageActionsSettings, SensorHelper sensorHelper,
+    public FlatUpSensor(LineageActionsSettings lineageActionsSettings, SensorHelper sensorHelper,
                 SensorAction action) {
-        mLineageActionsSettings = LineageActionsSettings;
+        mLineageActionsSettings = lineageActionsSettings;
         mSensorHelper = sensorHelper;
         mSensorAction = action;
 
