@@ -359,6 +359,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libcharging_shim \
     libcutils_shim \
     libqsapshim
 
