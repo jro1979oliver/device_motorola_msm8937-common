@@ -387,7 +387,10 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # VNDK
+# Update this list with what each blob is actually for
+# libstdc++: camera blobs
 PRODUCT_PACKAGES += \
+    libstdc++.vendor \
     vndk_package
 
 # Vibrator
