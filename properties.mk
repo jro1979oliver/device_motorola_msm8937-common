@@ -54,6 +54,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.qti.telephony.vt_cam_interface=1
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    vendor.camera.hal1.packagelist=org.lineageos.snap
+
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cnd.iwlan=1 \
