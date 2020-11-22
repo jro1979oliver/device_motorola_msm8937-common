@@ -85,7 +85,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.hwc_set_default_colormode=true \
     ro.vendor.display.cabl=0 \
-    vendor.display.enable_default_color_mode=1
+    vendor.display.enable_default_color_mode=1 \
+    debug.sf.disable_backpressure=1
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
