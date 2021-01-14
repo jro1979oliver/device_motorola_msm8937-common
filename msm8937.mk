@@ -62,8 +62,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    GoogleCameraGo \
     libbson.vendor \
-    Snap \
     libstdc++.vendor \
     libwui
 
