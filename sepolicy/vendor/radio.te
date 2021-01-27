@@ -1,0 +1,2 @@
+# com.android.phone
+allow radio gpuservice:binder { call };
