@@ -196,7 +196,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.facing=false \
     ro.vendor.sensors.scrn_ortn=false \
     ro.vendor.sensors.cmc=false \
-    ro.vendor.sensors.pedometer=false
+    ro.vendor.sensors.pedometer=false \
+    ro.vendor.sensors.smd=false
 
 # Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
