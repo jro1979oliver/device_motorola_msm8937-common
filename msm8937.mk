@@ -186,7 +186,7 @@ PRODUCT_PACKAGES += \
 # LineageActions
 ifeq ($(filter ahannah rhannah,$(TARGET_DEVICE)),)
 PRODUCT_PACKAGES += \
-    LineageActions
+    MotoActions
 endif
 
 # LiveDisplay
