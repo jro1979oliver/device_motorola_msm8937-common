@@ -10,5 +10,11 @@
    {
     "repository": "android_system_qcom",
     "target_path": "system/qcom"
+  },
+  {
+    "repository"  : "hardware_motorola",
+    "target_path" : "hardware/motorola",
+    "branch"      : "eleven",
+    "remote"      : "pixel-devices"
    }
 ]
